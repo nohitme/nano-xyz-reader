@@ -1,4 +1,5 @@
 <com.example.xyzreader.ui.DrawInsetsFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/draw_insets_frame_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -23,13 +24,13 @@
         <!--suppress AndroidLintContentDescription -->
         <ImageView
             android:id="@+id/photo"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/detail_photo_height"
             />
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="112dp"
+            android:layout_height="match_parent"
             android:background="@drawable/photo_background_protection"
             />
 
@@ -92,8 +93,7 @@
             android:fontFamily="@font/rosario_regular"
             android:lineSpacingMultiplier="@fraction/detail_body_line_spacing_multiplier"
             android:paddingBottom="@dimen/detail_body_bottom_margin"
-            android:textColor="@color/primaryTextColor"
-            android:textColorLink="@color/secondaryLightColor"
+            tools:text="@tools:sample/lorem/random"
             android:textSize="@dimen/detail_body_text_size"
             />
 
