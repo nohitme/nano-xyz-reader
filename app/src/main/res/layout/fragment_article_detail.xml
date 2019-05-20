@@ -1,4 +1,5 @@
 <com.example.xyzreader.ui.DrawInsetsFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/draw_insets_frame_layout"
     android:layout_width="match_parent"
@@ -102,16 +103,16 @@
     </FrameLayout>
   </com.example.xyzreader.ui.ObservableScrollView>
 
-  <ImageButton
+  <android.support.design.widget.FloatingActionButton
       android:id="@+id/share_fab"
       android:layout_width="56dp"
       android:layout_height="56dp"
       android:layout_gravity="bottom|end"
-      android:layout_marginRight="@dimen/fab_margin"
-      android:layout_marginBottom="@dimen/fab_margin"
+      android:layout_margin="@dimen/fab_margin"
       android:contentDescription="@string/action_share"
       android:elevation="@dimen/fab_elevation"
       android:src="@drawable/ic_share"
+      app:pressedTranslationZ="12dp"
       />
 
 </com.example.xyzreader.ui.DrawInsetsFrameLayout>
