@@ -26,6 +26,7 @@
             android:id="@+id/photo"
             android:layout_width="match_parent"
             android:layout_height="@dimen/detail_photo_height"
+            android:scaleType="centerCrop"
             />
 
         <View
@@ -93,8 +94,8 @@
             android:fontFamily="@font/rosario_regular"
             android:lineSpacingMultiplier="@fraction/detail_body_line_spacing_multiplier"
             android:paddingBottom="@dimen/detail_body_bottom_margin"
-            tools:text="@tools:sample/lorem/random"
             android:textSize="@dimen/detail_body_text_size"
+            tools:text="@tools:sample/lorem/random"
             />
 
       </com.example.xyzreader.ui.MaxWidthLinearLayout>
@@ -111,7 +112,6 @@
       android:contentDescription="@string/action_share"
       android:elevation="@dimen/fab_elevation"
       android:src="@drawable/ic_share"
-      android:stateListAnimator="@anim/fab_state_list_anim"
       />
 
 </com.example.xyzreader.ui.DrawInsetsFrameLayout>
